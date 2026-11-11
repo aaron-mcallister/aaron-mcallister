@@ -13,12 +13,16 @@ CISSP · GICSP · 8+ years at Palo Alto Networks · 4+ years at Cloudflare
 **[cf-user-activity-report](https://github.com/aaron-mcallister/cf-user-activity-report)**
 A per-user activity report for Cloudflare One that joins Gateway, Access, and WAF data by identity, the kind of cross-dataset view Log Explorer can't produce today. Runs on the Workers free plan. Built to fail closed: it verifies the signed Access token instead of trusting headers, ships strict security headers and a CSP, and has a regression test suite and CI.
 
+**[agent-security-evals](https://github.com/aaron-mcallister/agent-security-evals)**
+Deterministic security evals for tool-using LLM agents: indirect prompt injection, MCP-style tool poisoning, excessive agency, and secret handling, mapped to the OWASP LLM Top 10. Runs in seconds against scripted agents, compares defences (spotlighting, a policy gate) side by side, and can be pointed at a real model.
+
 ## How I build in public
 
 - Fail closed by default. Never trust a header the client can send.
 - Least-privilege CI, SHA-pinned actions, Dependabot, secret scanning with push protection.
 - Protected `main` (pull requests and required checks), plus private vulnerability reporting via `SECURITY.md`.
 - Public demos use synthetic data only.
+- AI-assisted, human-owned. I build with Claude as a pair programmer, and commits it helped write carry a `Co-Authored-By: Claude` trailer. I review, test and take responsibility for everything that ships.
 
 ## Connect
 
