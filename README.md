@@ -10,11 +10,12 @@ CISSP · GICSP · 8+ years at Palo Alto Networks · 4+ years at Cloudflare
 
 ## Projects
 
-**[cf-user-activity-report](https://github.com/aaron-mcallister/cf-user-activity-report)**
-A per-user activity report for Cloudflare One that joins Gateway, Access, and WAF data by identity, the kind of cross-dataset view Log Explorer can't produce today. Runs on the Workers free plan. Built to fail closed: it verifies the signed Access token instead of trusting headers, ships strict security headers and a CSP, and has a regression test suite and CI.
-
 **[agent-security-evals](https://github.com/aaron-mcallister/agent-security-evals)**
 Deterministic security evals for tool-using LLM agents: indirect prompt injection, MCP-style tool poisoning, excessive agency, and secret handling, mapped to the OWASP LLM Top 10. Runs in seconds against scripted agents, compares defences (spotlighting, a policy gate) side by side, and can be pointed at a real model.
+
+**[claude-code-governance](https://github.com/aaron-mcallister/claude-code-governance)** A reference architecture for governing Claude Code in an enterprise: a managed-settings policy, a fail-closed policy hook, and a linter, with tests and CI that check the rendered policy against the real `claude doctor`. Documents its own known gaps instead of overclaiming.
+
+**[hardened-mcp-server](https://github.com/aaron-mcallister/hardened-mcp-server)** A small MCP server where every security control is a tested behavior mapped to the MCP authorization spec: OAuth resource-server auth, per-tool scopes with step-up, team isolation, and hardened output against prompt injection. A mutation check breaks each control and requires the tests to notice.
 
 ## How I build in public
 
