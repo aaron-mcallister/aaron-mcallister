@@ -4,7 +4,7 @@
 
 Twenty-plus years across DoD, ISP, higher education, and enterprise tech have taught me that the most interesting problems sit at the intersection of security, performance, and emerging technology. Right now, that intersection is AI security.
 
-I'm particularly focused on how large language models and AI agents are reshaping enterprise risk: securing AI interactions, governing MCP-connected tools, detecting threats in governing MCP-connected tools, and building policy frameworks for agentic workflows. As AI moves from experimentation to production, the security and governance layer is where the hardest problems live.
+I'm particularly focused on how large language models and AI agents are reshaping enterprise risk: securing AI interactions, governing MCP-connected tools, and building policy frameworks for agentic workflows. As AI moves from experimentation to production, the security and governance layer is where the hardest problems live.
 
 CISSP · GICSP · 8+ years at Palo Alto Networks · 4+ years at Cloudflare
 
@@ -25,8 +25,8 @@ A small MCP server where every security control is a tested behavior mapped to t
 - Least-privilege CI, SHA-pinned actions, Dependabot, secret scanning with push protection.
 - Protected `main` (pull requests and required checks), plus private vulnerability reporting via `SECURITY.md`.
 - Public demos use synthetic data only.
-- Every project says what it did not test (see each repo’s docs/VALIDATION.md or results limits).
-- AI-assisted, human-owned. I build with Claude as a pair programmer, and most commits it helped write carry a Co-Authored-By: Claude trailer. I review, test and take responsibility for everything that ships.
+- Every project says what it did not test (see each repo's `docs/VALIDATION.md` or results limits).
+- AI-assisted, human-owned. I build with Claude as a pair programmer, and most commits it helped write carry a `Co-Authored-By: Claude` trailer. I review, test and take responsibility for everything that ships.
 
 ## Connect
 
